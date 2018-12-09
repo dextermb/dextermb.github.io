@@ -1,0 +1,11 @@
+.clickable {
+    &:hover {
+        color:#fff;
+        cursor:pointer;
+    }
+
+    * {
+        color:inherit;
+        cursor:inherit;
+    }
+}
