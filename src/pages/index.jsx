@@ -30,6 +30,17 @@ export default () => (
                 />
             </Clickable>
             <Clickable
+                title={'LinkedIn'}
+                onClick={() => (
+                    navigate('https://www.linkedin.com/in/dexter-marks-barber/')
+                )}
+            >
+                <Icon
+                    type={'brand'}
+                    icon={'linkedin-in'}
+                />
+            </Clickable>
+            <Clickable
                 title={'Twitter'}
                 onClick={() => (
                     navigate('https://twitter.com/dmarksbarber')
