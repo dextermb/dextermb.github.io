@@ -1,10 +1,25 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
-export default () => (
-    <img
-        width={40}
-        height={40}
-        className={'avatar'}
-        src={'http://gravatar.com/avatar/a2bb35fd57f6ee3d4979db9e7c364797'}
-    />
+const Avatar = ({ size, src, className, style, ...props }) => (
+  <div
+    {...props}
+    className={classNames([
+      className, 'avatar',
+      { [`display-${size}`]: size }
+    ])}
+    style={{
+      ...style,
+      backgroundImage: `url(${src})`
+    }}
+  />
 )
+
+Avatar.propTypes = {
+  size: PropTypes.oneOf([
+    'small', 'large'
+  ])
+}
+
+export default Avatar

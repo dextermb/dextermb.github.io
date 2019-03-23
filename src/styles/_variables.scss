@@ -1,7 +1,45 @@
-// Colors
-$bg-color: #000;
-$dot-color: #212121;
+$body-background:#fff;
+$secondary-background:#f8f9fa;
 
-// Dimensions
-$dot-size: 2px;
-$dot-space: 50px;
+$brand-color:#228be6;
+$brand-color-hover:#339af0;
+$brand-color-active:#1c7ed6;
+
+$border-color:#e9ecef;
+$border-width:1px;
+
+$border:solid $border-width $border-color;
+$border-radius:3px;
+
+$box-shadow-color:rgba(0,0,0,.15);
+$box-shadow:0 2px 4px $box-shadow-color;
+$box-shadow-hover:-1px 3px 4px $box-shadow-color;
+$box-shadow-active: 0 1px 4px $box-shadow-color;
+
+$font-family:'Open Sans', sans-serif;
+$header-font-family:$font-family;
+$subheader-font-family:$font-family;
+$content-font-family:$font-family;
+$subcontent-font-family:$font-family;
+
+$header-font-weight:600;
+$subheader-font-weight:600;
+$content-font-weight:400;
+$subcontent-font-weight:400;
+
+$header-font-size:24px;
+$subheader-font-size:18px;
+$content-font-size:12px;
+$subcontent-font-size:10px;
+
+$header-color:invert($body-background);
+$subheader-color:lighten($header-color, 10);
+$content-color:lighten($subheader-color, 20);
+$subcontent-color:lighten($content-color, 20);
+
+$gutter:20px;
+$gutter-half:$gutter / 2;
+$gutter-double:$gutter * 2;
+
+$wrapper-width:720px;
+$wrapper-width-wide:960px;

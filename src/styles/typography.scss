@@ -1,0 +1,36 @@
+.color-header {
+  color:$header-color;
+}
+.color-subheader {
+  color:$subheader-color;
+}
+.color-content {
+  color:$content-color;
+}
+.color-subcontent {
+  color:$subcontent-color;
+}
+.header {
+  font-family:$header-font-family;
+  font-weight:$header-font-weight;
+  font-size:$header-font-size;
+  color:$header-color;
+}
+.subheader {
+  font-family:$subheader-font-family;
+  font-weight:$subheader-font-weight;
+  font-size:$subheader-font-size;
+  color:$subheader-color;
+}
+.content {
+  font-family:$content-font-family;
+  font-weight:$content-font-weight;
+  font-size:$content-font-size;
+  color:$content-color;
+}
+.subcontent {
+  font-family:$subcontent-font-family;
+  font-weight:$subcontent-font-weight;
+  font-size:$subcontent-font-size;
+  color:$subcontent-color;
+}

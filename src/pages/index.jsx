@@ -1,75 +1,35 @@
-import React from 'react';
-import Flex from '@ninetynine/react-flex';
+import React from 'react'
 
-import Avatar from '../components/avatar';
-import Icon from '../components/icon';
-import Clickable from '../components/clickable';
-
-const navigate = uri => (
-    window.open(uri, '_blank').focus()
-);
+import Wrapper from '../components/wrapper'
+import Section from '../components/section'
+import Avatar from '../components/avatar'
+import Social from '../components/link/social'
+import Programming from '../components/list/programming'
+import Experience from '../components/list/experience'
+import Projects from '../components/list/projects'
 
 export default () => (
-    <Flex column>
-        <Avatar/>
-        <div className={'text-center'}>
-            <h1>Dexter Marks-Barber</h1>
-            <p>PHP/MySQL/React/Node</p>
+  <Wrapper>
+    <Section>
+      <div className={'flex flex-spacing flex-inline flex-start'}>
+        <Avatar
+          src={'https://github.com/dextermb.png'}
+        />
+        <div>
+          <h1>Dexter Marks-Barber</h1>
+          <p className={'mb-gh'}>PHP, MySQL, JavaScript</p>
+          <Social />
         </div>
-        
-        <Flex row>
-            <Clickable
-                title={'GitHub'}
-                onClick={() => (
-                    navigate('https://github.com/dextermb')
-                )}
-            >
-                <Icon
-                    type={'brand'}
-                    icon={'github'}
-                />
-            </Clickable>
-            <Clickable
-                title={'LinkedIn'}
-                onClick={() => (
-                    navigate('https://www.linkedin.com/in/dexter-marks-barber/')
-                )}
-            >
-                <Icon
-                    type={'brand'}
-                    icon={'linkedin-in'}
-                />
-            </Clickable>
-            <Clickable
-                title={'Twitter'}
-                onClick={() => (
-                    navigate('https://twitter.com/dmarksbarber')
-                )}
-            >
-                <Icon 
-                    type={'brand'}
-                    icon={'twitter'}
-                />
-            </Clickable>
-            <Clickable
-                title={'Email'}
-                onClick={() => (
-                    navigate('mailto:dexter@marks-barber.co.uk')
-                )}
-            >
-                <Icon icon={'at'}/>
-            </Clickable>
-            <Clickable
-                title={'Stackoverflow CV'}
-                onClick={() => (
-                    navigate('https://stackoverflow.com/cv/dexter')
-                )}
-            >
-                <Icon
-                    type={'brand'}
-                    icon={'stack-overflow'}
-                />
-            </Clickable>
-        </Flex>
-    </Flex>
+      </div>
+    </Section>
+    <Section>
+      <Programming />
+    </Section>
+    <Section>
+      <Experience />
+    </Section>
+    <Section>
+      <Projects />
+    </Section>
+  </Wrapper>
 )

@@ -1,0 +1,12 @@
+.wrapper {
+  width:100%;
+  max-width:$wrapper-width;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  padding:0 $gutter;
+
+  &.display-wide {
+    max-width:$wrapper-width-wide;
+  }
+}

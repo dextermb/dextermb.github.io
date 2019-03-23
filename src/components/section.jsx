@@ -2,19 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-const Page = ({ content, children, className, ...props }) => (
+const Section = ({ content, children, className, ...props }) => (
   <div
     {...props}
     className={classNames([
-      className, 'page'
+      className, 'section'
     ])}
   >
     {content || children }
   </div>
 )
 
-Page.propTypes = {
+Section.propTypes = {
   content: PropTypes.node
 }
 
-export default Page
+export default Section
